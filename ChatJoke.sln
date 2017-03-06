@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatJoke", "ChatJoke\ChatJoke.csproj", "{EC033F65-FCB4-4806-95F8-1AF4D92A5EFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatJoke.Tests", "ChatJoke.Tests\ChatJoke.Tests.csproj", "{EB2A4EDD-ABAC-4085-BBB9-76870D12A9A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC033F65-FCB4-4806-95F8-1AF4D92A5EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC033F65-FCB4-4806-95F8-1AF4D92A5EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC033F65-FCB4-4806-95F8-1AF4D92A5EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC033F65-FCB4-4806-95F8-1AF4D92A5EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB2A4EDD-ABAC-4085-BBB9-76870D12A9A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB2A4EDD-ABAC-4085-BBB9-76870D12A9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB2A4EDD-ABAC-4085-BBB9-76870D12A9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB2A4EDD-ABAC-4085-BBB9-76870D12A9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
