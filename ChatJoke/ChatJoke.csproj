@@ -91,9 +91,12 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
+    <Content Include="Структура чата.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\EnginerChatController.cs" />
+    <Compile Include="Controllers\RegistrationChatController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -102,6 +105,12 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Views\RegistrationChat\Index.cshtml" />
+    <Content Include="Views\RegistrationChat\Registration.cshtml" />
+    <Content Include="Views\RegistrationChat\About.cshtml" />
+    <Content Include="Views\RegistrationChat\Reminder.cshtml" />
+    <Content Include="Views\RegistrationChat\RegistrationConfirm.cshtml" />
+    <Content Include="Views\EnginerChat\ChatRoom.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
