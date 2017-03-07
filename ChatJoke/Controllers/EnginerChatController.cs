@@ -9,8 +9,16 @@ using Microsoft.Web.WebSockets;
 
 namespace ChatJoke.Controllers
 {
+
+    /// <summary>
+    /// API Rest Контроллер, так как у нас одно приложение и одна задача, то мы делаем WebSocket сервер прям тут...
+    /// </summary>
     public class EnginerChatController : ApiController
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public HttpResponseMessage Get()
         {
             HttpContext.Current.AcceptWebSocketRequest(new ChatWebSocketHandler());
@@ -18,8 +26,12 @@ namespace ChatJoke.Controllers
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         class ChatWebSocketHandler : WebSocketHandler
         {
+
             private static WebSocketCollection _chatCients = new WebSocketCollection();
             public string uname;
 
@@ -28,6 +40,9 @@ namespace ChatJoke.Controllers
                 
             }
 
+            /// <summary>
+            /// 
+            /// </summary>
             public override void OnOpen()
             {
 
@@ -40,6 +55,10 @@ namespace ChatJoke.Controllers
                 }
             }
 
+            /// <summary>
+            /// 
+            /// </summary>
+            /// <param name="message"></param>
             public override void OnMessage(string message)
             {
                 if (message.IndexOf(":") >= 0)
@@ -59,6 +78,9 @@ namespace ChatJoke.Controllers
                 }
             }
 
+            /// <summary>
+            /// 
+            /// </summary>
             public override void OnClose()
             {
                 _chatCients.Remove(this);

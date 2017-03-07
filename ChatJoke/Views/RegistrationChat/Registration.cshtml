@@ -1,18 +1,18 @@
-﻿@model dynamic
-
+﻿@model ChatJoke.Models.RegModel
 @{
-    Layout = null;
+    ViewBag.Title = "title";
+    Layout = "../_Layout/_fullInterface.cshtml";
 }
 
-<!DOCTYPE html>
+@using (Html.BeginForm("Registration", null, FormMethod.Post, new { }))
+{
+    @Html.AntiForgeryToken()
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+    @Html.TextBoxFor(m => m.login, new { maxlength = 50, tabindex = 1 })
+
+    @Html.PasswordFor(m => m.password, new { maxlength = 50, tabindex = 2 })
+
+    @Html.PasswordFor(m => m.confirmPass, new { maxlength = 50, tabindex = 2 })
+
+    <input class="_enter_st" type="submit" value="Зарегистрироваться" tabindex=3 />
+}

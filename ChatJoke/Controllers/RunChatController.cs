@@ -16,9 +16,9 @@ namespace ChatJoke.Controllers
         }
 
         // GET: RunChat
-        public ActionResult Index()
+        public ActionResult RoomChat()
         {
-            return null;
+            return View();
         }
     }
 }
