@@ -6,7 +6,7 @@ using System.Web.Http;
 
 namespace ChatJoke.App_Start
 {
-    public class ConfigApi
+    public static class ConfigApi
     {
         public static void Register(HttpConfiguration config)
         {

@@ -1,21 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using ChatJoke.App_Start;
+using ChatJoke.Module.Filter;
 
 namespace ChatJoke.Controllers
 {
+    [AuthorizUser]
     public class RunChatController : Controller
     {
         public RunChatController()
         {
-            GlobalConfiguration.Configure(ConfigApi.Register);
+            System.Web.Http.GlobalConfiguration.Configure(ConfigApi.Register);
         }
 
         // GET: RunChat
+        [Route("chat/", Name = "RegistrationGet")]
         public ActionResult RoomChat()
         {
             return View();

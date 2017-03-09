@@ -125,6 +125,11 @@
     </Compile>
     <Compile Include="Models\AuthModel.cs" />
     <Compile Include="Models\ChatModel.cs" />
+    <Compile Include="Module\CustomMemberShip\EnterProvider.cs" />
+    <Compile Include="Module\CustomMemberShip\CookiesModel.cs" />
+    <Compile Include="Module\CustomMemberShip\CookiesHandler.cs" />
+    <Compile Include="Module\CustomMemberShip\UserTicketProvider.cs" />
+    <Compile Include="Module\Filter\AuthorizUserAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
